@@ -22,8 +22,27 @@ namespace TaskManager.Domain.Enums
     }
     public enum WorkspaceRole
     {
-        Member,
-        Admin
+        Owner,
+        ProjectManager,
+        Member
+    }
+    public enum ProjectStatus
+    {
+        NotStarted,
+        InProgress,
+        Completed,
+        OnHold,
+        Cancelled
+    }
+    public enum NotificationType
+    {
+        TaskAssigned,
+        TaskSubmitted,
+        TaskApproved,
+        TaskRejected,
+        TaskDueSoon,
+        ProjectCreated,
+        ProjectMemberAdded
     }
 
 

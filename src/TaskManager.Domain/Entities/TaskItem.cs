@@ -22,5 +22,27 @@ namespace TaskManager.Domain.Entities
 
         private TaskItem() { } // requis par EF Core
 
+        public TaskItem(string title, Guid projectId, TaskPriority priority)
+        {
+            if (string.IsNullOrWhiteSpace(title))
+                throw new DomainExceptions("Le titre de la tâche est obligatoire.");
+            Title = title;
+            ProjectId = projectId;
+            Priority = priority;
+        }
+
+
+        public void AssignTo(Guid userId)
+        {
+            AssignedUserId = userId;
+        }
+        public void ChangeStatus(TaskStatu newStatus)
+        {
+            if (newStatus == TaskStatu.Done && AssignedUserId is null)
+                throw new DomainExceptions(
+                "Impossible de terminer une tâche non assignée.");
+            Status = newStatus;
+        }
+    }
         
-}
+    }
