@@ -32,18 +32,19 @@ namespace TaskManager.Domain.Enums
         InProgress,
         Completed,
         OnHold,
-        Cancelled
+        Cancelled, Active,
+        Archived
     }
     public enum NotificationType
-    {
-        TaskAssigned,
-        TaskSubmitted,
-        TaskApproved,
-        TaskRejected,
-        TaskDueSoon,
-        ProjectCreated,
-        ProjectMemberAdded
-    }
-
+{
+    TaskAssigned,
+    TaskSubmitted,
+    TaskApproved,
+    TaskRejected,
+    TaskDueSoon,
+    ProjectCreated,
+    ProjectMemberAdded
+}
+ 
 
 }
