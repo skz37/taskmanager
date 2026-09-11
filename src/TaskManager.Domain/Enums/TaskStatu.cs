@@ -22,7 +22,7 @@ namespace TaskManager.Domain.Enums
     }
     public enum WorkspaceRole
     {
-        Owner,
+        Admin,
         ProjectManager,
         Member
     }
