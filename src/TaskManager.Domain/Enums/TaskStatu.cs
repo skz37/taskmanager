@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManager.Domain.Enums
 {
-    internal enum TaskStatu
+    public enum TaskStatu
     {
         ToDo,
         InProgress,
