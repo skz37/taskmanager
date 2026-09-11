@@ -25,6 +25,7 @@ namespace TaskManager.Domain.Entities
         public ICollection<TaskItem> Tasks { get; private set; }
             = new List<TaskItem>();
     
+
     // Constructeur privé pour EF Core
         private Project()
         {
@@ -97,4 +98,5 @@ namespace TaskManager.Domain.Entities
         }
     }
 }
+
 
