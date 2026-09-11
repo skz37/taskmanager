@@ -10,7 +10,7 @@ using TaskManager.Domain.Exceptions;
 
 namespace TaskManager.Domain.Entities
 {
-    internal class TaskItem : BaseEntity
+    public class TaskItem : BaseEntity
     {
         public string Title { get; private set; }
         public string? Description { get; private set; }

@@ -7,7 +7,7 @@ using TaskManager.Domain.Enums;
 
 namespace TaskManager.Domain.Entities
 {
-    internal public class WorkspaceMember
+    public class WorkspaceMember
     {
         public Guid WorkspaceId { get; private set; }
 
